@@ -1,0 +1,22 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "loader.js",
+  "scripts": {
+    "dev":"nodemon src/server.js",
+    "production":"pm2 start src/server.js --name backend"
+  },
+  "author": "Guilherme Maziero",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-query-int": "^3.0.0",
+    "mongoose": "^5.12.1",
+    "mongoose-paginate": "^5.0.3",
+    "pm2": "^4.5.5"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
